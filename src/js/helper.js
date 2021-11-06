@@ -20,6 +20,11 @@ const LIGHT_BLUE = "#28C0E8";
 const GREEN = "#97C93D";
 const WHITE = "#FFFFFF";
 const GRAY = "#BCBEC0";
+const TRANSPARENT = "#00000000";
+const EL_DARK_BLUE = "#1d4c6c";
+const EL_LIGHT_BLUE = "#26c2eb";
+const EL_GREEN = "#6ab417";
+const BLACK = "#000000";
 const CLOCK_TIMER_INTERVAL = 1000;      // Frequency that the countdown should be refreshed, in ms
 const ACTION_TIMER_INTERVAL = 60000;    // Frequency that a new action should be taken, in ms
 const DONOR_TIMER_INTERVAL = 60000;     // Length of time a new donation is shown, in ms
@@ -185,7 +190,7 @@ function parseSettings() {
         // TODO: After adding support for specifying custom sounds when
         // running remote, parse the sound parameter instead of hardcoding
         // these defaults.
-        donationSounds = "cash.mp3,kids.mp3";
+        donationSounds = "AlphaGaming-Donation.mp3","cash.mp3,kids.mp3";
     }
     if (urlParms.has("pid")) {
         participantId = urlParms.get("pid");
@@ -663,6 +668,32 @@ function initScreen() {
             donorMessageText2.fillColor = DARK_BLUE;
             logoGroup.fillColor = WHITE;
             break;
+        case "custom1":
+            backgroundPath.strokeColor = EL_DARK_BLUE;
+            backgroundPath.fillColor = TRANSPARENT;
+            titleText.fillColor = EL_DARK_BLUE;
+            daysText.fillColor = EL_LIGHT_BLUE;
+            clockGroup.fillColor = EL_LIGHT_BLUE;
+            raisedText.fillColor = EL_DARK_BLUE;
+            moneyText.fillColor = EL_DARK_BLUE;
+            donorAmountText.fillColor = EL_LIGHT_BLUE;
+            donorNameText.fillColor = EL_DARK_BLUE;
+            donorMessageText1.fillColor = EL_DARK_BLUE;
+            donorMessageText2.fillColor = EL_DARK_BLUE;
+            break;
+        case "custom2":
+            backgroundPath.strokeColor = EL_DARK_BLUE;
+            backgroundPath.fillColor = TRANSPARENT;
+            titleText.fillColor = EL_DARK_BLUE;
+            daysText.fillColor = EL_LIGHT_BLUE;
+            clockGroup.fillColor = EL_LIGHT_BLUE;
+            raisedText.fillColor = EL_DARK_BLUE;
+            moneyText.fillColor = EL_DARK_BLUE;
+            donorAmountText.fillColor = EL_LIGHT_BLUE;
+            donorNameText.fillColor = EL_DARK_BLUE;
+            donorMessageText1.fillColor = EL_DARK_BLUE;
+            donorMessageText2.fillColor = EL_DARK_BLUE;
+            break; 
         default: // white1
             backgroundPath.strokeColor = DARK_BLUE;
             backgroundPath.fillColor = WHITE;
