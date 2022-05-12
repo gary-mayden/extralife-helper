@@ -21,6 +21,7 @@ const GREEN = "#97C93D";
 const WHITE = "#FFFFFF";
 const GRAY = "#BCBEC0";
 const TRANSPARENT = "#00000000";
+const FADED = "#00000005";
 const EL_DARK_BLUE = "#1d4c6c";
 const EL_LIGHT_BLUE = "#26c2eb";
 const EL_GREEN = "#6ab417";
@@ -669,20 +670,20 @@ function initScreen() {
             logoGroup.fillColor = WHITE;
             break;
         case "custom1":
-            backgroundPath.strokeColor = EL_DARK_BLUE;
+            backgroundPath.strokeColor = TRANSPARENT;
             backgroundPath.fillColor = TRANSPARENT;
-            titleText.fillColor = EL_DARK_BLUE;
+            titleText.fillColor = WHITE;
             daysText.fillColor = EL_LIGHT_BLUE;
             clockGroup.fillColor = EL_LIGHT_BLUE;
-            raisedText.fillColor = EL_DARK_BLUE;
-            moneyText.fillColor = EL_DARK_BLUE;
+            raisedText.fillColor = WHITE;
+            moneyText.fillColor = WHITE;
             donorAmountText.fillColor = EL_LIGHT_BLUE;
-            donorNameText.fillColor = EL_DARK_BLUE;
-            donorMessageText1.fillColor = EL_DARK_BLUE;
-            donorMessageText2.fillColor = EL_DARK_BLUE;
+            donorNameText.fillColor = WHITE;
+            donorMessageText1.fillColor = WHITE;
+            donorMessageText2.fillColor = WHITE;
             break;
         case "custom2":
-            backgroundPath.strokeColor = EL_DARK_BLUE;
+            backgroundPath.strokeColor = TRANSPARENT;
             backgroundPath.fillColor = TRANSPARENT;
             titleText.fillColor = EL_DARK_BLUE;
             daysText.fillColor = EL_LIGHT_BLUE;
@@ -690,10 +691,23 @@ function initScreen() {
             raisedText.fillColor = EL_DARK_BLUE;
             moneyText.fillColor = EL_DARK_BLUE;
             donorAmountText.fillColor = EL_LIGHT_BLUE;
-            donorNameText.fillColor = EL_DARK_BLUE;
-            donorMessageText1.fillColor = EL_DARK_BLUE;
-            donorMessageText2.fillColor = EL_DARK_BLUE;
-            break; 
+            donorNameText.fillColor = WHITE;
+            donorMessageText1.fillColor = WHITE;
+            donorMessageText2.fillColor = WHITE;
+            break;
+        case "custom3":
+            backgroundPath.strokeColor = TRANSPARENT;
+            backgroundPath.fillColor = FADED;
+            titleText.fillColor = EL_LIGHT_BLUE;
+            daysText.fillColor = EL_LIGHT_BLUE;
+            clockGroup.fillColor = WHITE;
+            raisedText.fillColor = EL_LIGHT_BLUE;
+            moneyText.fillColor = EL_LIGHT_BLUE;
+            donorAmountText.fillColor = EL_LIGHT_BLUE;
+            donorNameText.fillColor = WHITE;
+            donorMessageText1.fillColor = WHITE;
+            donorMessageText2.fillColor = WHITE;
+            break;             
         default: // white1
             backgroundPath.strokeColor = DARK_BLUE;
             backgroundPath.fillColor = WHITE;
