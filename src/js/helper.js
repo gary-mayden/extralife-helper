@@ -689,7 +689,7 @@ function initScreen() {
             daysText.fillColor = EL_LIGHT_BLUE;
             clockGroup.fillColor = EL_LIGHT_BLUE;
             raisedText.fillColor = EL_DARK_BLUE;
-            moneyText.fillColor = EL_DARK_BLUE;
+            moneyText.fillColor =  EL_LIGHT_BLUE;
             donorAmountText.fillColor = EL_LIGHT_BLUE;
             donorNameText.fillColor = WHITE;
             donorMessageText1.fillColor = WHITE;
